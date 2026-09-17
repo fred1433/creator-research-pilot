@@ -1,0 +1,11 @@
+{
+ "hello@bramblewoodbakes.test": {
+  "result": "ok"
+ },
+ "bookings@apexartists.test": {
+  "result": "ok"
+ },
+ "press@fernhollowforge.test": {
+  "result": "ok"
+ }
+}

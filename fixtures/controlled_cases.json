@@ -1,0 +1,46 @@
+[
+ {
+  "url": "https://www.youtube.com/@bramblewoodbakes",
+  "note": "controlled case: a complete chain, published address on an established property",
+  "proposed": [
+   {
+    "value": "hello@bramblewoodbakes.test",
+    "source_url": "https://bramblewoodbakes.test/contact",
+    "quote": "For partnership and press enquiries, write to hello@bramblewoodbakes.test",
+    "note": "positive control: proposed from outside, correctly sourced, must be accepted"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/@northwindclimbing",
+  "note": "controlled case: a represented creator, contact belongs to the agency"
+ },
+ {
+  "url": "https://www.youtube.com/@quillandcompass",
+  "note": "controlled case: nothing published, said plainly"
+ },
+ {
+  "url": "https://www.youtube.com/@saltmarshsessions",
+  "note": "controlled case: an address on a third party page, refused by name"
+ },
+ {
+  "url": "https://www.youtube.com/@harbourlightpottery",
+  "note": "controlled case: no address, an open contact form"
+ },
+ {
+  "url": "https://www.youtube.com/@fernhollowforge",
+  "note": "controlled case: an injected finding, deliberately unsupported",
+  "proposed": [
+   {
+    "value": "press@fernhollowforge.test",
+    "source_url": "https://fernhollowforge.test",
+    "quote": "Press and partnership enquiries go to press@fernhollowforge.test",
+    "note": "injected on purpose: this sentence is not on that page"
+   }
+  ]
+ },
+ {
+  "url": "https://youtube.com/@bramblewoodbakes/about",
+  "note": "controlled case: the same channel written differently, must not duplicate"
+ }
+]

@@ -1,0 +1,5 @@
+{
+ "url": "https://www.googleapis.com/youtube/v3/channels?part=snippet&forHandle=harbourlightpottery",
+ "status": "200",
+ "body": "{\n \"kind\": \"youtube#channelListResponse\",\n \"items\": [\n  {\n   \"kind\": \"youtube#channel\",\n   \"id\": \"UCctrl0000000000000005\",\n   \"snippet\": {\n    \"title\": \"Harbourlight Pottery\",\n    \"description\": \"Wheel throwing, glaze tests, kiln disasters. https://harbourlightpottery.test\",\n    \"customUrl\": \"@harbourlightpottery\",\n    \"publishedAt\": \"2019-03-14T09:12:00Z\",\n    \"country\": \"GB\"\n   }\n  }\n ]\n}"
+}

@@ -1,0 +1,5 @@
+{
+ "url": "https://harbourlightpottery.test/get-in-touch",
+ "status": "200",
+ "body": "\n<html><head><title>Get in touch - Harbourlight Pottery</title></head><body>\n<h1>Get in touch</h1>\n<p>We do not publish an address. Use the form and we will come back to you.</p>\n<form method=\"post\" action=\"/send\">\n<input name=\"name\"><input name=\"email\"><textarea name=\"message\"></textarea>\n<button>Send</button></form>\n</body></html>"
+}

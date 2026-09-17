@@ -1,0 +1,50 @@
+name: checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0        # the history is checked too, not just the working tree
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .
+          pip install pytest
+
+      - name: Tests, controls included
+        run: python -m pytest tests -q
+
+      - name: The workflow runs end to end on controlled sources
+        run: |
+          python -m pilot.run replay --input fixtures/controlled_cases.json --out examples/replay-output
+          python - <<'PY'
+          import json, sys
+          d = json.load(open("examples/replay-output/results.json"))
+          counts = d["counts"]
+          assert sum(counts.values()) == 6, counts
+          assert counts.get("verified") == 1, counts
+          assert counts.get("not found") == 2, counts
+          assert d["verification_credits_spent"] == 0, "the replay mode must spend nothing"
+          assert "press@fernhollowforge.test" not in json.dumps(d), "an injected finding got through"
+          print("replay:", counts)
+          PY
+
+      - name: The control report says what the controls actually did
+        run: |
+          python scripts/control_report.py > /tmp/report.md
+          grep -q "row \`verified\`, in the sheet: true, draft: produced" /tmp/report.md
+          grep -q "row \`not found\`, in the sheet: false" /tmp/report.md
+          grep -q "rejected: quote not found on the page" /tmp/report.md

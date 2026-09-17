@@ -1,0 +1,5 @@
+{
+ "url": "https://www.googleapis.com/youtube/v3/channels?part=snippet&forHandle=bramblewoodbakes",
+ "status": "200",
+ "body": "{\n \"kind\": \"youtube#channelListResponse\",\n \"items\": [\n  {\n   \"kind\": \"youtube#channel\",\n   \"id\": \"UCctrl0000000000000001\",\n   \"snippet\": {\n    \"title\": \"Bramblewood Bakes\",\n    \"description\": \"Weeknight baking from a small kitchen. Everything we use: https://bramblewoodbakes.test\",\n    \"customUrl\": \"@bramblewoodbakes\",\n    \"publishedAt\": \"2019-03-14T09:12:00Z\",\n    \"country\": \"GB\"\n   }\n  }\n ]\n}"
+}

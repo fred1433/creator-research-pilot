@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+.env
+.env.*
+
+# A real run writes outside this repository. Nothing about a real person belongs here:
+# no address, no name next to a status, no fetched page, no database.
+.local/
+data/
+*.full.json
+*.sqlite3
