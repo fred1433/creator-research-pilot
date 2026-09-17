@@ -31,7 +31,7 @@ import urllib.parse
 
 from .model import Finding
 
-EMAIL_RE = re.compile(r"[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}")
+EMAIL_RE = re.compile(r"[A-Za-z0-9][A-Za-z0-9._%+\-]*@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}")
 
 AGGREGATOR_HOSTS = ("linktr.ee", "bio.site", "beacons.ai", "linkin.bio", "koji.to",
                     "lnk.bio", "solo.to", "campsite.bio", "carrd.co", "milkshake.app")

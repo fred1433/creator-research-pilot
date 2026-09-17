@@ -22,7 +22,9 @@ from __future__ import annotations
 
 import re
 
-EMAIL_RE = re.compile(r"[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}")
+# The local part has to start with a letter or a digit. Without that, a line of a diff
+# such as `+@pytest.fixture` parses as an address and this check cries wolf.
+EMAIL_RE = re.compile(r"[A-Za-z0-9][A-Za-z0-9._%+\-]*@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}")
 
 # Domains an address may carry inside this repository. Everything else is a leak.
 #   .test / .invalid / .example : reserved by RFC 2606, they resolve for nobody
