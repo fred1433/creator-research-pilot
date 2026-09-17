@@ -187,7 +187,12 @@ still published by a public repository.
 
 ## What a run consumes
 
-Measured on the controlled sample and on one real run of six channels:
+Measured on the controlled sample and on one real run of six channels, on 17 September 2026,
+one request at a time with a pause of 2.5 seconds: two verification credits spent, one row
+`verified`, five to review, of which four where the channel step could not run at all because
+the key available to that run had no access to the YouTube Data API. No page of YouTube was
+read instead, and the six site URLs were supplied by hand and counted as `manual_input`. That
+run stays in a private evidence folder: see the last section but one.
 
 | | |
 |---|---|
