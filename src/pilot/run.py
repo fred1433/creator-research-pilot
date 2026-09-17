@@ -236,7 +236,7 @@ def _row_reason(rec: ChannelRecord, rel: dict[str, Any], had_site: bool) -> tupl
 
 def execute(entries: list[dict[str, str]], store: Store, fetcher, checker,
             api_key: str = "", stop_after: int = 0, verbose: bool = True,
-            access_note: str = "") -> dict[str, Any]:
+            access_note: str = "", reprocess: bool = False) -> dict[str, Any]:
     """Run the queue. A job is marked done only once its record is written.
 
     `stop_after` exists for the interruption test: it stops the run between two jobs, the
@@ -244,6 +244,8 @@ def execute(entries: list[dict[str, str]], store: Store, fetcher, checker,
     without duplicating what is done and without touching a decision.
     """
     store.queue([e["url"] for e in entries])
+    if reprocess:
+        store.requeue([e["url"] for e in entries])
     by_key = {job_key(e["url"]): e for e in entries}
     done = 0
     for job in store.pending_jobs():
@@ -355,6 +357,8 @@ def main(argv: list[str] | None = None) -> int:
         p.add_argument("--db", default="", help="sqlite file, default <out>/pilot.sqlite3")
         p.add_argument("--delay", type=float, default=2.0)
         p.add_argument("--stop-after", type=int, default=0)
+        p.add_argument("--reprocess", action="store_true",
+                       help="read the list again and rewrite every calculated column")
         if name == "run":
             p.add_argument("--live-check", action="store_true",
                            help="spend one verification credit per new address")
@@ -399,7 +403,7 @@ def main(argv: list[str] | None = None) -> int:
 
         entries = json.load(open(a.input, encoding="utf-8"))
         execute(entries, store, fetcher, checker, api_key, stop_after=a.stop_after,
-                access_note='' if api_key else api_note)
+                access_note='' if api_key else api_note, reprocess=a.reprocess)
         payload = report(store, fetcher, checker, a.cmd, api_note)
         write_outputs(payload, out_dir, a.private_out)
         print(json.dumps(payload["counts"], indent=1))

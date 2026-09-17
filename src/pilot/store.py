@@ -187,6 +187,20 @@ class Store:
         self.db.commit()
         return added
 
+    def requeue(self, urls: Iterable[str]) -> int:
+        """Put finished jobs back in the queue, to refresh a list that was already read.
+
+        Refreshing is a normal operation, and it is the one that has to leave a reviewer's
+        answers alone: every calculated column is written again, and the decisions table is
+        not touched by this path at all.
+        """
+        n = 0
+        for u in urls:
+            cur = self.db.execute("UPDATE jobs SET state='pending' WHERE job_key=?", (job_key(u),))
+            n += cur.rowcount
+        self.db.commit()
+        return n
+
     def pending_jobs(self) -> list[dict[str, Any]]:
         return [dict(r) for r in self.db.execute(
             "SELECT * FROM jobs WHERE state IN ('pending','failed') ORDER BY attempts, job_key")]

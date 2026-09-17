@@ -21,9 +21,9 @@ from pilot.sheet import read_decisions, write_csv
 from pilot.store import contact_key
 
 
-def process_all(cases, fetcher, checker, store, stop_after=0):
+def process_all(cases, fetcher, checker, store, stop_after=0, reprocess=False):
     return R.execute(cases, store, fetcher, checker, "controlled-key-not-a-secret",
-                     stop_after=stop_after, verbose=False)
+                     stop_after=stop_after, verbose=False, reprocess=reprocess)
 
 
 def test_a_decision_survives_a_rerun_when_the_evidence_has_not_changed(
@@ -35,8 +35,9 @@ def test_a_decision_survives_a_rerun_when_the_evidence_has_not_changed(
     store.set_decision(ch["channel_key"], ck, DEC_APPROVED, "source page checked by hand",
                        "reviewer", ch["fingerprint"])
 
-    # A second pass over the same list. Every calculated column is recomputed.
-    process_all(cases, fetcher, checker, store)
+    # A real second pass: every row is read again and every calculated column rewritten.
+    again = process_all(cases, fetcher, checker, store, reprocess=True)
+    assert again["processed"] == 6, "the refresh has to actually read the rows again"
 
     rows = R.build_rows(store)
     row = next(r for r in rows if r["c_channel_key"] == ch["channel_key"])
@@ -81,7 +82,7 @@ def test_the_sheet_round_trip_carries_a_decision_back(cases, fetcher, checker, s
     store.set_decision(ch["channel_key"], ck, back[0]["decision"], back[0]["reason"],
                        back[0]["decided_by"], ch["fingerprint"])
 
-    process_all(cases, fetcher, checker, store)
+    process_all(cases, fetcher, checker, store, reprocess=True)
     again = next(r for r in R.build_rows(store) if r["c_channel_key"] == ch["channel_key"])
     assert again["d_decision"] == "rejected"
     assert again["d_reason"] == "we do not write to agencies"

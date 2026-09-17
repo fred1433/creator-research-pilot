@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-09-17T13:29:33Z",
+ "generated_at": "2026-09-17T13:38:43Z",
  "mode": "replay",
- "commit": "unknown",
+ "commit": "fce0b09",
  "youtube_access": "answered from controlled sources: no network, no quota, no credit",
  "sheets_adapter": {
   "status": "not connected",
@@ -43,7 +43,7 @@
      "quote": "Bramblewood Bakes @bramblewoodbakes",
      "final_url": "https://www.googleapis.com/youtube/v3/channels?part=snippet&forHandle=bramblewoodbakes",
      "context": "",
-     "observed_at": "2026-09-17T13:29:33Z",
+     "observed_at": "2026-09-17T13:38:43Z",
      "content_sha256": "",
      "origin": "collected",
      "note": "youtube data api channels.list. This source needs a key, so it cannot be re-read anonymously: it is evidence observed at the run, kept with the run, and it is not revalidated the way a public page is"
@@ -55,7 +55,7 @@
      "quote": "contact\">Contact</a></nav>\n<p>Watch on <a href=\"https://www.youtube.com/@bramblewoodbakes\">our YouTube channel</a>.</p>\n</body></html>",
      "final_url": "https://bramblewoodbakes.test",
      "context": "the channel links to this site and the site links back to this channel",
-     "observed_at": "2026-09-17T13:29:33Z",
+     "observed_at": "2026-09-17T13:38:43Z",
      "content_sha256": "e28e51f992386c63d5aec417b266627cbd932ee7dc86f38585531b46decd136c",
      "origin": "collected",
      "note": "the channel links to this site and the site links back to this channel"
@@ -67,15 +67,15 @@
      "quote": "partnership and press enquiries, write to h***@bramblewoodbakes.test and we will answer within a week. YouTube",
      "final_url": "https://bramblewoodbakes.test/contact",
      "context": "Contact - Bramblewood Bakes Contact For partnership and press enquiries, write to h***@bramblewoodbakes.test and we will answer within a week. YouTube",
-     "observed_at": "2026-09-17T13:29:33Z",
+     "observed_at": "2026-09-17T13:38:43Z",
      "content_sha256": "1f6efebee243d6d9a06840352c236a63973f30fa242dad526e9975b40f9d3502",
      "origin": "collected",
      "note": "published on a property whose relation to the channel is established"
     }
    ],
    "refused": [],
-   "first_seen": "2026-09-17T13:29:33Z",
-   "last_seen": "2026-09-17T13:29:33Z",
+   "first_seen": "2026-09-17T13:38:43Z",
+   "last_seen": "2026-09-17T13:38:43Z",
    "summary": "verified",
    "evidence_fingerprint": "78dd8fae249f39e51a13d0f65c8a27fab1c6f53419d895fc76bd279f4bad557f"
   },
@@ -107,7 +107,7 @@
      "quote": "Fernhollow Forge @fernhollowforge",
      "final_url": "https://www.googleapis.com/youtube/v3/channels?part=snippet&forHandle=fernhollowforge",
      "context": "",
-     "observed_at": "2026-09-17T13:29:33Z",
+     "observed_at": "2026-09-17T13:38:43Z",
      "content_sha256": "",
      "origin": "collected",
      "note": "youtube data api channels.list. This source needs a key, so it cannot be re-read anonymously: it is evidence observed at the run, kept with the run, and it is not revalidated the way a public page is"
@@ -119,7 +119,7 @@
      "quote": "thing goes through the channel.</p>\n<p><a href=\"https://www.youtube.com/@fernhollowforge\">youtube.com/@fernhollowforge</a></p>\n<!-- A page that trie",
      "final_url": "https://fernhollowforge.test",
      "context": "the channel links to this site and the site links back to this channel",
-     "observed_at": "2026-09-17T13:29:33Z",
+     "observed_at": "2026-09-17T13:38:43Z",
      "content_sha256": "893e1ec4c7aea8f30cc0930373176901ccc561f081cdef1e359414cd7cabc6b3",
      "origin": "collected",
      "note": "the channel links to this site and the site links back to this channel"
@@ -134,7 +134,7 @@
       "quote": "Press and partnership enquiries go to p***@fernhollowforge.test",
       "final_url": "https://fernhollowforge.test",
       "context": "",
-      "observed_at": "2026-09-17T13:29:33Z",
+      "observed_at": "2026-09-17T13:38:43Z",
       "content_sha256": "",
       "origin": "proposed",
       "note": "injected on purpose: this sentence is not on that page"
@@ -148,8 +148,8 @@
      "checked_at": null
     }
    ],
-   "first_seen": "2026-09-17T13:29:33Z",
-   "last_seen": "2026-09-17T13:29:33Z",
+   "first_seen": "2026-09-17T13:38:43Z",
+   "last_seen": "2026-09-17T13:38:43Z",
    "summary": "not found",
    "evidence_fingerprint": "4fc114652218ff0623920f6eb572b0df58c14dcee4d2731cea8c38e55c4628b8"
   },
@@ -181,7 +181,7 @@
      "quote": "Harbourlight Pottery @harbourlightpottery",
      "final_url": "https://www.googleapis.com/youtube/v3/channels?part=snippet&forHandle=harbourlightpottery",
      "context": "",
-     "observed_at": "2026-09-17T13:29:33Z",
+     "observed_at": "2026-09-17T13:38:43Z",
      "content_sha256": "",
      "origin": "collected",
      "note": "youtube data api channels.list. This source needs a key, so it cannot be re-read anonymously: it is evidence observed at the run, kept with the run, and it is not revalidated the way a public page is"
@@ -193,7 +193,7 @@
      "quote": "get-in-touch\">Get in touch</a>.</p>\n<p><a href=\"https://www.youtube.com/@harbourlightpottery\">Our channel</a></p>\n</body></html>",
      "final_url": "https://harbourlightpottery.test",
      "context": "the channel links to this site and the site links back to this channel",
-     "observed_at": "2026-09-17T13:29:33Z",
+     "observed_at": "2026-09-17T13:38:43Z",
      "content_sha256": "539d8979960f925217279684c05b13f3489164acfdc4a5447ae4b8e1418d2ba1",
      "origin": "collected",
      "note": "the channel links to this site and the site links back to this channel"
@@ -205,15 +205,15 @@
      "quote": "get in touch",
      "final_url": "https://harbourlightpottery.test/get-in-touch",
      "context": "",
-     "observed_at": "2026-09-17T13:29:33Z",
+     "observed_at": "2026-09-17T13:38:43Z",
      "content_sha256": "71ddc44437a990a562c1737eb58e1f64e9b7e9c75659273db12c4522ce09d4a2",
      "origin": "collected",
      "note": "a professional contact form, usable by a human reviewer"
     }
    ],
    "refused": [],
-   "first_seen": "2026-09-17T13:29:33Z",
-   "last_seen": "2026-09-17T13:29:33Z",
+   "first_seen": "2026-09-17T13:38:43Z",
+   "last_seen": "2026-09-17T13:38:43Z",
    "summary": "needs review",
    "evidence_fingerprint": "bf6046a3e0dc5393f017a416860896ffaa7aa6a8fe740c4bdc56284b7e02ff08"
   },
@@ -245,7 +245,7 @@
      "quote": "Northwind Climbing @northwindclimbing",
      "final_url": "https://www.googleapis.com/youtube/v3/channels?part=snippet&forHandle=northwindclimbing",
      "context": "",
-     "observed_at": "2026-09-17T13:29:33Z",
+     "observed_at": "2026-09-17T13:38:43Z",
      "content_sha256": "",
      "origin": "collected",
      "note": "youtube data api channels.list. This source needs a key, so it cannot be re-read anonymously: it is evidence observed at the run, kept with the run, and it is not revalidated the way a public page is"
@@ -257,7 +257,7 @@
      "quote": "k***@apexartists.test</p>\n<p>Channel: <a href=\"https://www.youtube.com/@northwindclimbing\">youtube.com/@northwindclimbing</a></p>\n</body></html>",
      "final_url": "https://apexartists.test/roster/northwind",
      "context": "the agency roster names this channel",
-     "observed_at": "2026-09-17T13:29:33Z",
+     "observed_at": "2026-09-17T13:38:43Z",
      "content_sha256": "f47c554c2a01bd936d4deb9137c7b6a75793d8d996fdfffe914395ab4a57c81a",
      "origin": "collected",
      "note": "the agency roster names this channel"
@@ -269,15 +269,15 @@
      "quote": "work. Brand and partnership enquiries: b***@apexartists.test Channel: youtube.com/@northwindclimbing",
      "final_url": "https://apexartists.test/roster/northwind",
      "context": "nagement Apex Artists Management Northwind Climbing Northwind Climbing is represented by Apex Artists for all commercial work. Brand and partnership enquiries: b***@apexartists.test Channel: youtube.com/@northwindclimbing",
-     "observed_at": "2026-09-17T13:29:33Z",
+     "observed_at": "2026-09-17T13:38:43Z",
      "content_sha256": "f47c554c2a01bd936d4deb9137c7b6a75793d8d996fdfffe914395ab4a57c81a",
      "origin": "collected",
      "note": "published on a property whose relation to the channel is established"
     }
    ],
    "refused": [],
-   "first_seen": "2026-09-17T13:29:33Z",
-   "last_seen": "2026-09-17T13:29:33Z",
+   "first_seen": "2026-09-17T13:38:43Z",
+   "last_seen": "2026-09-17T13:38:43Z",
    "summary": "needs review",
    "evidence_fingerprint": "49b1334af9d462ca5ee744e4ef7cb33fe5a9eb080a63f2e74adbf19b54fce472"
   },
@@ -309,15 +309,15 @@
      "quote": "Quill and Compass @quillandcompass",
      "final_url": "https://www.googleapis.com/youtube/v3/channels?part=snippet&forHandle=quillandcompass",
      "context": "",
-     "observed_at": "2026-09-17T13:29:33Z",
+     "observed_at": "2026-09-17T13:38:43Z",
      "content_sha256": "",
      "origin": "collected",
      "note": "youtube data api channels.list. This source needs a key, so it cannot be re-read anonymously: it is evidence observed at the run, kept with the run, and it is not revalidated the way a public page is"
     }
    ],
    "refused": [],
-   "first_seen": "2026-09-17T13:29:33Z",
-   "last_seen": "2026-09-17T13:29:33Z",
+   "first_seen": "2026-09-17T13:38:43Z",
+   "last_seen": "2026-09-17T13:38:43Z",
    "summary": "not found",
    "evidence_fingerprint": "c62fb06d68bbc2781f3d285dc2ca7e8af99b25aaeae52a080ea7d6702d9c0e3a"
   },
@@ -349,7 +349,7 @@
      "quote": "Saltmarsh Sessions @saltmarshsessions",
      "final_url": "https://www.googleapis.com/youtube/v3/channels?part=snippet&forHandle=saltmarshsessions",
      "context": "",
-     "observed_at": "2026-09-17T13:29:33Z",
+     "observed_at": "2026-09-17T13:38:43Z",
      "content_sha256": "",
      "origin": "collected",
      "note": "youtube data api channels.list. This source needs a key, so it cannot be re-read anonymously: it is evidence observed at the run, kept with the run, and it is not revalidated the way a public page is"
@@ -362,8 +362,8 @@
      "reason": "refused: the address sits on a site whose relation to this channel is not established"
     }
    ],
-   "first_seen": "2026-09-17T13:29:33Z",
-   "last_seen": "2026-09-17T13:29:33Z",
+   "first_seen": "2026-09-17T13:38:43Z",
+   "last_seen": "2026-09-17T13:38:43Z",
    "summary": "needs review",
    "evidence_fingerprint": "85397cbd978caea6d0caa3e32a69d9486b9cae30ff84cf58e6715a485a45b9a9"
   }
@@ -387,7 +387,7 @@
    "c_review_reason": "",
    "c_evidence_url": "https://www.googleapis.com/youtube/v3/channels?part=snippet&forHandle=bramblewoodbakes",
    "c_evidence_quote": "Bramblewood Bakes @bramblewoodbakes",
-   "c_observed_at": "2026-09-17T13:29:33Z",
+   "c_observed_at": "2026-09-17T13:38:43Z",
    "c_fingerprint": "78dd8fae249f39e5",
    "d_decision": "pending",
    "d_reason": "",
@@ -412,7 +412,7 @@
    "c_review_reason": "the site is established as a property of this channel and publishes no professional contact",
    "c_evidence_url": "https://www.googleapis.com/youtube/v3/channels?part=snippet&forHandle=fernhollowforge",
    "c_evidence_quote": "Fernhollow Forge @fernhollowforge",
-   "c_observed_at": "2026-09-17T13:29:33Z",
+   "c_observed_at": "2026-09-17T13:38:43Z",
    "c_fingerprint": "4fc114652218ff06",
    "d_decision": "pending",
    "d_reason": "",
@@ -437,7 +437,7 @@
    "c_review_reason": "no address published, and a professional contact form is open to a human",
    "c_evidence_url": "https://www.googleapis.com/youtube/v3/channels?part=snippet&forHandle=harbourlightpottery",
    "c_evidence_quote": "Harbourlight Pottery @harbourlightpottery",
-   "c_observed_at": "2026-09-17T13:29:33Z",
+   "c_observed_at": "2026-09-17T13:38:43Z",
    "c_fingerprint": "bf6046a3e0dc5393",
    "d_decision": "pending",
    "d_reason": "",
@@ -462,12 +462,12 @@
    "c_review_reason": "write to a representative, not to the creator directly",
    "c_evidence_url": "https://www.googleapis.com/youtube/v3/channels?part=snippet&forHandle=northwindclimbing",
    "c_evidence_quote": "Northwind Climbing @northwindclimbing",
-   "c_observed_at": "2026-09-17T13:29:33Z",
+   "c_observed_at": "2026-09-17T13:38:43Z",
    "c_fingerprint": "49b1334af9d462ca",
-   "d_decision": "pending",
-   "d_reason": "",
-   "d_decided_by": "",
-   "d_decided_at": ""
+   "d_decision": "rejected",
+   "d_reason": "we write to creators, not to their agencies",
+   "d_decided_by": "reviewer",
+   "d_decided_at": "2026-09-17T13:38:43Z"
   },
   {
    "c_channel_key": "UCctrl0000000000000003",
@@ -487,7 +487,7 @@
    "c_review_reason": "the channel publishes no site the workflow could read",
    "c_evidence_url": "https://www.googleapis.com/youtube/v3/channels?part=snippet&forHandle=quillandcompass",
    "c_evidence_quote": "Quill and Compass @quillandcompass",
-   "c_observed_at": "2026-09-17T13:29:33Z",
+   "c_observed_at": "2026-09-17T13:38:43Z",
    "c_fingerprint": "c62fb06d68bbc278",
    "d_decision": "pending",
    "d_reason": "",
@@ -512,7 +512,7 @@
    "c_review_reason": "third party page about the creator, not a property of theirs",
    "c_evidence_url": "https://www.googleapis.com/youtube/v3/channels?part=snippet&forHandle=saltmarshsessions",
    "c_evidence_quote": "Saltmarsh Sessions @saltmarshsessions",
-   "c_observed_at": "2026-09-17T13:29:33Z",
+   "c_observed_at": "2026-09-17T13:38:43Z",
    "c_fingerprint": "85397cbd978caea6",
    "d_decision": "pending",
    "d_reason": "",
@@ -560,7 +560,17 @@
  ],
  "contacts_deduplicated": 3,
  "failed_jobs": [],
- "decisions": [],
+ "decisions": [
+  {
+   "channel_key": "UCctrl0000000000000002",
+   "contact_key": "email:b***@apexartists.test",
+   "decision": "rejected",
+   "reason": "we write to creators, not to their agencies",
+   "decided_by": "reviewer",
+   "decided_at": "2026-09-17T13:38:43Z",
+   "fingerprint": "49b1334af9d462ca5ee744e4ef7cb33fe5a9eb080a63f2e74adbf19b54fce472"
+  }
+ ],
  "fetch_log": [
   {
    "url": "https://www.googleapis.com/youtube/v3/channels?part=snippet&forHandle=bramblewoodbakes&key=controlled-key-not-a-secret",
